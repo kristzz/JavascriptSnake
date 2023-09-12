@@ -1,4 +1,3 @@
-
 //board
 var blockSize = 25;
 var rows = 20;
@@ -96,10 +95,8 @@ function changeDirection(e) {
         velocityY = 0;
     }
 }
-
-
+ 
 function placeFood() {
-    //(0-1) * cols -> (0-19.9999) -> (0-19) * 25
     foodX = Math.floor(Math.random() * cols) * blockSize;
     foodY = Math.floor(Math.random() * rows) * blockSize;
 }
